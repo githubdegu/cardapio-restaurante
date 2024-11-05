@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Lanchonete do Jimmy</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Lanchonete do Jimmy</h1>
+            <h3>Os melhores hambúrgueres e pizzas da cidade</h3>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <section class="menu" id="menu"></section>
+            <section class="order" id="order"></section>
+        </div>
+    </main>
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal" id="modal">
+        <h2 class="modal-title">Insira os detalhes do cartão</h2>
+        <form id="payment-form">
+            <input type="text" name="fullName" placeholder="Digite seu nome" aria-label="Nome completo" required>
+            <input type="text" name="cardNumber" placeholder="Digite o número do cartão" aria-label="Número do cartão"
+                maxlength="19" required>
+            <input type="text" name="cardCvv" placeholder="Digite o CVV" aria-label="CVV do cartão" maxlength="3"
+                required>
+            <button class="modal-pay-btn" id="modal-pay-btn" type="submit">Pagar</button>
+        </form>
+    </div>
+    </div>
+    <script src="js/index.js" type="module"></script>
+</body>
+
+</html>
